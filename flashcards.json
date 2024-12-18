@@ -1,352 +1,402 @@
 [
     {
-        "front": "How does the Time to Live (TTL) field change during packet transmission, and what is its formula?",
-        "back": "TTL decrements by 1 at each router hop. The formula is: $$TTL_{new} = TTL_{original} - \\text{number of hops}$$\nPurpose: Prevents infinite routing loops",
+        "front": "What is the mathematical relationship for work in a heat engine?",
+        "back": "$$W = Q_H - Q_L$$, where W is work produced, $$Q_H$$ is heat input, and $$Q_L$$ is heat rejected.",
         "type": "formula-based",
-        "topic": "Network Layer Protocol",
-        "id": 695
+        "course": "Thermodynamics",
+        "topic": "IC Engine",
+        "id": 1
     },
     {
-        "front": "What are the key fields in IP header used for fragmentation?",
-        "back": "The key fields are:\n1. Identification: Links fragments of same datagram\n2. Fragment Offset: Position in original datagram\n3. More Fragments (MF) flag: Indicates if more fragments follow\n4. Don't Fragment (DF) flag: Controls fragmentation permission",
-        "type": "definition/recall-based",
-        "topic": "Data Link Layer",
-        "id": 20
-    },
-    {
-        "front": "What are the positions of check bits in Hamming Code?",
-        "back": "Check bits are placed at positions that are powers of 2 (positions 1, 2, 4, 8, etc.)",
-        "type": "definition/recall-based",
-        "topic": "Data Link Layer",
-        "id": 46
-    },
-    {
-        "front": "What are the three main security benefits of the Avalanche Effect?",
-        "back": "1. Cryptographic strength against statistical analysis\n2. Unpredictability of output patterns\n3. Protection against differential cryptanalysis",
-        "type": "definition/recall-based",
-        "topic": "Network Layer Protocol",
-        "id": 557
-    },
-    {
-        "front": "What is the IHL (Internet Header Length) field in an IPv4 header, and what is its minimum valid value?",
-        "back": "The IHL field is the next 4 bits after the Version field. It represents the total header length in 32-bit words. The minimum valid value is 5, corresponding to 20 bytes.",
-        "type": "definition/recall-based",
-        "topic": "Application Layer Protocols",
-        "id": 405
-    },
-    {
-        "front": "What is the purpose of a Jam Signal in CSMA/CD?",
-        "back": "A Jam Signal is a 32-bit sequence that serves to:\n1. Ensure all stations detect the collision\n2. Force collision detection by all transmitting stations\n3. Reinforce the collision presence to all stations",
-        "type": "definition/recall-based",
-        "topic": "Data Link Layer",
-        "id": 102
-    },
-    {
-        "front": "How do you calculate the maximum number of subnets in a Class B network with n subnet bits?",
-        "back": "Maximum number of subnets = $$2^n$$, where n is the number of subnet bits. Practically usable subnets = $$2^n - 2$$ (after subtracting all-0s and all-1s subnets)",
+        "front": "What is the dryness fraction (x) in a steam mixture?",
+        "back": "Dryness fraction represents the proportion of vapor in a liquid-vapor mixture, mathematically defined as $$x = \\frac{m_v}{m_v + m_l}$$, where $$m_v$$ is mass of vapor and $$m_l$$ is mass of liquid.",
         "type": "formula-based",
-        "topic": "Data Link Layer",
-        "id": 90
-    },
-    {
-        "front": "How is the Fragment Offset calculated in IP fragmentation?",
-        "back": "Fragment Offset = $$\\text{Offset} = \\frac{\\text{Previous Fragment Payload Size}}{8}$$",
-        "type": "formula-based",
-        "topic": "Network Layer Protocol",
-        "id": 562
-    },
-    {
-        "front": "What is the hierarchy of formal languages from lowest to highest power?",
-        "back": "1. Regular Languages (RE)\n2. Context-Free Languages (CFL)\n3. Context-Sensitive Languages (CSL)\n4. Recursively Enumerable Languages",
-        "type": "definition/recall-based",
-        "topic": "Network Security",
-        "id": 875
-    },
-    {
-        "front": "How is the time for a single chunk transmission calculated?",
-        "back": "The time for a single chunk transmission is: $$T_{chunk} = \\frac{\\text{chunk size in bits}}{\\text{bandwidth}}$$",
-        "type": "formula-based",
-        "topic": "Network Layer Protocol",
-        "id": 488
-    },
-    {
-        "front": "What are the three IP header fields that are modified by routers during packet transmission?",
-        "back": "1. Time to Live (TTL) - decremented by 1 at each hop\n2. Header Checksum - recalculated due to TTL changes\n3. Length - may be modified if fragmentation occurs",
-        "type": "definition/recall-based",
-        "topic": "Data Link Layer",
-        "id": 143
-    },
-    {
-        "front": "What is the main difference between Distance Vector Routing and Link State Routing protocols?",
-        "back": "Distance Vector Routing exchanges distance information to known destinations, while Link State Routing exchanges information about direct network connections and maintains complete network topology.",
-        "type": "definition/recall-based",
-        "topic": "Network Layer Protocol",
-        "id": 706
-    },
-    {
-        "front": "What are the two main solutions to prevent Silly Window Syndrome?",
-        "back": "1. Clark's Solution (Receiver-side): Don't advertise small window sizes\n2. Nagle's Algorithm (Sender-side): Accumulate data before sending",
-        "type": "definition/recall-based",
-        "topic": "Network Security",
-        "id": 1051
-    },
-    {
-        "front": "What is the formula for calculating the minimum frame size in Ethernet?",
-        "back": "$$\\text{Minimum Frame Size} = \\frac{2 \\times \\text{Segment Length} \\times \\text{Transmission Speed}}{\\text{Propagation Speed}}$$",
-        "type": "formula-based",
-        "topic": "Data Link Layer",
+        "course": "Thermodynamics",
+        "topic": "Pure Substances",
         "id": 2
     },
     {
-        "front": "What is bit stuffing in data link layer?",
-        "back": "Bit stuffing is a technique used in data link layer protocols to ensure data transparency and proper frame synchronization by preventing data patterns from being mistaken as control flags.",
+        "front": "What are the two key corrections in the Van der Waals equation compared to the ideal gas law?",
+        "back": "1. Molecular Volume Correction: Accounts for finite volume of gas molecules (represented by term `b`)\\n2. Intermolecular Attraction Correction: Represents attractive forces between molecules (represented by term `a/v\u00b2`)",
         "type": "definition/recall-based",
-        "topic": "Network Layer Protocol",
-        "id": 607
+        "course": "Thermodynamics",
+        "topic": "IC Engine",
+        "id": 3
     },
     {
-        "front": "What is Euler's Totient Function (\u03c6(n)) for a product of two primes p and q?",
-        "back": "For a product of two primes: $$\u03c6(n) = \u03c6(p \u00d7 q) = (p-1)(q-1)$$",
+        "front": "How is the net work in a Carnot cycle calculated?",
+        "back": "The net work is calculated by $$W_{net} = Q_{in} \\\\left(1 - \\\\frac{T_L}{T_H}\\\\right)$$, where $$Q_{in}$$ is the input heat rate.",
         "type": "formula-based",
-        "topic": "Application Layer Protocols",
-        "id": 341
+        "course": "Thermodynamics",
+        "topic": "IC Engine",
+        "id": 4
     },
     {
-        "front": "What is the formula for calculating link utilization based on frame size and propagation delay?",
-        "back": "$$\\text{Utilization} = \\frac{\\text{Frame Size}}{\\text{Frame Size} + \\text{Bandwidth} \u00d7 2T_p}$$",
+        "front": "What are the critical assumptions of the Air-Standard Otto Cycle?",
+        "back": "1. Working fluid is an ideal gas\\n2. Specific heats remain constant\\n3. Processes are internally and externally reversible\\n4. Processes are idealized and simplified",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "First Law Heat Work and Energy",
+        "id": 5
+    },
+    {
+        "front": "What determines the liquid level behavior in a constant volume two-phase system during heating?",
+        "back": "The behavior depends on the initial mixture composition, thermodynamic properties, and the relationship between current specific volume and critical specific volume.",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "IC Engine",
+        "id": 6
+    },
+    {
+        "front": "What is the key principle governing entropy in a reversible heat transfer process?",
+        "back": "In a reversible process, the total entropy change of the universe remains zero: $$\\\\Delta S_{\\\\text{univ}} = \\\\Delta S_L + \\\\Delta S_M = 0$$",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "Power System",
+        "id": 7
+    },
+    {
+        "front": "What does Volumetric Efficiency measure in an internal combustion engine?",
+        "back": "Volumetric Efficiency measures the actual air volume inducted compared to the engine's swept volume, indicating how efficiently the engine can draw in air for combustion.",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "IC Engine",
+        "id": 8
+    },
+    {
+        "front": "How is compression ratio (r) calculated in an Otto cycle?",
+        "back": "Compression ratio is calculated by $$r = 1 + \\frac{V_s}{V_c}$$, where $$V_s$$ is swept volume and $$V_c$$ is clearance volume.",
         "type": "formula-based",
-        "topic": "Data Link Layer",
-        "id": 136
+        "course": "Thermodynamics",
+        "topic": "IC Engine",
+        "id": 9
     },
     {
-        "front": "What are the address lengths for IPv4 and IPv6?",
-        "back": "IPv4: 32-bit address\nIPv6: 128-bit address",
+        "front": "What is a rich fuel-air mixture in a carburetor?",
+        "back": "A fuel-air mixture with a higher proportion of fuel compared to the ideal stoichiometric ratio, designed to ensure reliable combustion under challenging operating conditions.",
         "type": "definition/recall-based",
-        "topic": "Network Layer Protocol",
-        "id": 808
+        "course": "Thermodynamics",
+        "topic": "Power System",
+        "id": 10
     },
     {
-        "front": "What is CRC (Cyclic Redundancy Check) and what is its primary purpose?",
-        "back": "CRC is a method for detecting errors in digital data transmission that uses polynomial division over GF(2) (Galois Field of 2 elements).",
+        "front": "What makes the Carnot Cycle unique in terms of heat processes?",
+        "back": "Heat Addition: Constant Temperature (Isothermal)\\nHeat Rejection: Constant Temperature (Isothermal)\\nConsidered the theoretical ideal cycle for maximum thermal efficiency",
         "type": "definition/recall-based",
-        "topic": "Network Layer Protocol",
-        "id": 595
+        "course": "Thermodynamics",
+        "topic": "Power System",
+        "id": 11
     },
     {
-        "front": "What is ARP (Address Resolution Protocol) and what is its primary function?",
-        "back": "ARP is a networking protocol that bridges Layer 3 and Layer 2 by mapping IP addresses (logical addresses) to MAC addresses (physical/hardware addresses) in IPv4 networks.",
-        "type": "definition/recall-based",
-        "topic": "Network Layer Protocol",
-        "id": 858
-    },
-    {
-        "front": "What makes a link 'unused' in distance vector routing?",
-        "back": "A link becomes unused when there exists another path with a lower total cost between two nodes. Mathematically, for nodes i and j, a link L is unused if: $$\\text{Cost}(\\text{alternate_path}(i,j)) < \\text{Cost}(L_{ij})$$",
-        "type": "definition/recall-based",
-        "topic": "Application Layer Protocols",
-        "id": 446
-    },
-    {
-        "front": "What are the three key factors determined by CSMA propagation delay considerations?",
-        "back": "1. Maximum network diameter for reliable communication\n2. Minimum carrier sense duration needed\n3. Trade-offs between network size and collision probability",
-        "type": "definition/recall-based",
-        "topic": "Network Security",
-        "id": 905
-    },
-    {
-        "front": "What is the mathematical formula for calculating the network portion in IP routing?",
-        "back": "For an IP address $$A$$ and subnet mask $$M$$, the network portion is calculated as: $$A \\text{ AND } M$$",
+        "front": "What is the fundamental relationship describing an ideal gas behavior?",
+        "back": "The ideal gas law is $$PV = mRT$$, relating pressure, volume, mass, gas constant, and temperature.",
         "type": "formula-based",
-        "topic": "Network Layer Protocol",
-        "id": 645
+        "course": "Thermodynamics",
+        "topic": "First Law Heat Work and Energy",
+        "id": 12
     },
     {
-        "front": "How is the best path selected in Distance Vector Routing?",
-        "back": "The router calculates path cost through each neighbor and selects the minimum cost path using: $$BestPath = \\min\\{Cost_{via\\_neighbor1}, Cost_{via\\_neighbor2}, ..., Cost_{via\\_neighborN}\\}$$",
+        "front": "What is the formula for Otto cycle efficiency?",
+        "back": "The Otto cycle efficiency is calculated by $$\\eta_{Otto} = 1 - \\frac{1}{r^{\\gamma-1}}$$, where $$r$$ is the compression ratio and $$\\gamma$$ is the specific heat ratio.",
         "type": "formula-based",
-        "topic": "Network Layer Protocol",
-        "id": 534
+        "course": "Thermodynamics",
+        "topic": "IC Engine",
+        "id": 13
     },
     {
-        "front": "What is Channel Load in Slotted ALOHA and how is it calculated?",
-        "back": "Channel Load represents the average number of transmission attempts per time slot. It is calculated as: $$Channel Load = \\frac{Number of Requests per second}{Number of Slots per second}$$",
+        "front": "How does steam superheating impact the Rankine cycle's performance?",
+        "back": "Steam superheating increases cycle efficiency by raising the mean temperature of heat addition, which improves thermodynamic work potential and overall energy conversion effectiveness.",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "First Law Heat Work and Energy",
+        "id": 14
+    },
+    {
+        "front": "What is a key assumption in the ideal Rankine cycle calculation?",
+        "back": "In the ideal cycle, pump work is neglected, and net work is considered equal to turbine work: $$w_{net} = w_{T}$$",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "Second Law Carnot Cycle and Entropy",
+        "id": 15
+    },
+    {
+        "front": "What are the key components involved in a Rankine cycle with reheat?",
+        "back": "Key components include high-pressure turbine (HPT), low-pressure turbine (LPT), reheater, pump, and condenser, which facilitate multi-stage steam expansion and energy conversion.",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "IC Engine",
+        "id": 16
+    },
+    {
+        "front": "How is specific enthalpy approximated in a subcooled liquid state?",
+        "back": "In a subcooled liquid state, specific enthalpy closely approximates the saturated liquid enthalpy at the same temperature, represented by $$h_{subcooled} \\approx h_{saturated liquid}$$",
         "type": "formula-based",
-        "topic": "Network Layer Protocol",
-        "id": 652
+        "course": "Thermodynamics",
+        "topic": "Power System",
+        "id": 17
     },
     {
-        "front": "What is the fundamental formula for calculating a network address?",
-        "back": "$$\\text{Network Address} = \\text{IP Address} \\land \\text{Subnet Mask}$$ where \u2227 represents bitwise AND operation",
-        "type": "formula-based",
-        "topic": "Network Layer Protocol",
-        "id": 537
-    },
-    {
-        "front": "How can an unused link potentially become part of the network routing?",
-        "back": "By changing the weights of unused links to a lower value, they may become part of new shortest paths in the network.",
+        "front": "What is the significance of the multiple mass flow rate terms in the turbine power output equation?",
+        "back": "The multiple mass flow rate terms allow for analyzing power output with different mass flow streams and stage enthalpies, representing complex energy transformations in turbomachinery.",
         "type": "definition/recall-based",
-        "topic": "Application Layer Protocols",
-        "id": 449
-    },
-    {
-        "front": "What are the essential properties of message digest functions?",
-        "back": "1. Fixed output length regardless of input size\n2. Deterministic (same input produces same output)\n3. Computationally infeasible to:\n   - Reverse the hash (one-way property)\n   - Find two different inputs with same hash (collision resistance)",
-        "type": "definition/recall-based",
-        "topic": "Network Security",
-        "id": 949
-    },
-    {
-        "front": "What is the formula for calculating the number of fragments in IP fragmentation?",
-        "back": "$$Number of Fragments = \\left\\lceil\\frac{Original Data Size}{(Smallest MTU - IP Header Size)}\\right\\rceil$$\nwhere Original Data Size = Total Size - IP Header Size",
-        "type": "formula-based",
-        "topic": "Network Layer Protocol",
-        "id": 481
-    },
-    {
-        "front": "In TCP/IP networking, what address information remains constant throughout packet transmission, and what changes at each hop?",
-        "back": "The source and destination IP addresses remain constant throughout transmission, while the source and destination MAC addresses change at each network hop.",
-        "type": "definition/recall-based",
-        "topic": "Network Layer Protocol",
-        "id": 477
-    },
-    {
-        "front": "What is the correct sequence of steps in web browser-server communication?",
-        "back": "1. DNS Resolution\n2. TCP Connection\n3. HTTP Request\n4. HTTP Response",
-        "type": "definition/recall-based",
-        "topic": "Network Layer Protocol",
-        "id": 723
-    },
-    {
-        "front": "What is the difference between ARP and RARP?",
-        "back": "ARP (Address Resolution Protocol) maps IP addresses to MAC addresses using broadcast requests and unicast replies, while RARP (Reverse ARP) maps MAC addresses to IP addresses using static mapping tables.",
-        "type": "definition/recall-based",
-        "topic": "Data Link Layer",
-        "id": 100
-    },
-    {
-        "front": "What is the formula for calculating the RSA modulus (n)?",
-        "back": "$$n = p \u00d7 q$$ where p and q are prime numbers",
-        "type": "formula-based",
-        "topic": "Network Layer Protocol",
-        "id": 669
-    },
-    {
-        "front": "What is the formula for calculating Round Trip Time (RTT) using timestamp components?",
-        "back": "$$RTT = (ATS - OTS) - (TTS - RTS)$$",
-        "type": "formula-based",
-        "topic": "Application Layer Protocols",
-        "id": 397
-    },
-    {
-        "front": "List the PDUs for each layer of the TCP/IP protocol stack from Application to Physical layer.",
-        "back": "- Application Layer: Message\n- Transport Layer: Segment (TCP) or Datagram (UDP)\n- Network Layer: Datagram/Packet\n- Data Link Layer: Frame\n- Physical Layer: Bits",
-        "type": "definition/recall-based",
-        "topic": "Network Security",
-        "id": 956
-    },
-    {
-        "front": "What are the key characteristics of UDP (User Datagram Protocol)?",
-        "back": "- Connectionless protocol\n- Used for simple request-response communications\n- No guarantee of delivery or order\n- Common applications: DNS, BOOTP/DHCP, NTP",
-        "type": "definition/recall-based",
-        "topic": "Application Layer Protocols",
-        "id": 394
-    },
-    {
-        "front": "How is transmission time ($$T_x$$) calculated in Stop-and-Wait Protocol?",
-        "back": "$$T_x = \\frac{\\text{Frame Size}}{\\text{Bandwidth}}$$",
-        "type": "formula-based",
-        "topic": "Data Link Layer",
-        "id": 135
-    },
-    {
-        "front": "How does HTTP handle TCP connections, and what is the benefit?",
-        "back": "HTTP can establish multiple parallel TCP connections, with each resource being fetched using a separate connection. This enables concurrent downloads and improved performance.",
-        "type": "definition/recall-based",
-        "topic": "Data Link Layer",
-        "id": 140
-    },
-    {
-        "front": "What are start and stop bits in serial communication, and what is their primary purpose?",
-        "back": "Start and stop bits are special control bits that don't carry actual data. Their primary purpose is to maintain synchronization between sender and receiver in serial communication.",
-        "type": "definition/recall-based",
-        "topic": "Data Link Layer",
-        "id": 327
-    },
-    {
-        "front": "What algorithm does OSPF use to calculate the shortest path?",
-        "back": "OSPF uses Dijkstra's shortest path algorithm to independently calculate the best path to all destinations in the network.",
-        "type": "definition/recall-based",
-        "topic": "Network Layer Protocol",
-        "id": 676
-    },
-    {
-        "front": "How does the Don't Fragment (DF) flag control IPv4 fragmentation?",
-        "back": "The DF flag controls fragmentation in two ways:\n- If DF=0: Packet can be fragmented\n- If DF=1: Packet is dropped and ICMP message is sent back",
-        "type": "definition/recall-based",
-        "topic": "Data Link Layer",
+        "course": "Thermodynamics",
+        "topic": "Power System",
         "id": 18
     },
     {
-        "front": "What is the formula for calculating overhead percentage in networking?",
-        "back": "$$\\frac{\\text{Total Overhead}}{\\text{Packet Size}} \\times 100 = \\text{Overhead Percentage}$$",
-        "type": "formula-based",
-        "topic": "Network Security",
-        "id": 891
-    },
-    {
-        "front": "How does the twisting in UTP cables help with signal quality?",
-        "back": "The twisting of wire pairs helps reduce electromagnetic interference (EMI) and crosstalk between adjacent wire pairs.",
+        "front": "What are the four thermodynamic processes in the Diesel cycle?",
+        "back": "1. Isentropic compression (1 to 2)\\n2. Constant pressure heat addition (2 to 3)\\n3. Isentropic expansion (3 to 4)\\n4. Constant volume heat rejection (4 to 1)",
         "type": "definition/recall-based",
-        "topic": "Data Link Layer",
-        "id": 84
+        "course": "Thermodynamics",
+        "topic": "First Law Heat Work and Energy",
+        "id": 19
     },
     {
-        "front": "What is the formula for link utilization (\u03b7) in sliding window flow control?",
-        "back": "$$\\eta = \\frac{N \\times T_f}{T_f + 2T_p + T_{ACK}}$$\nwhere:\nN = Window size (frames)\nT_f = Frame transmission time\nT_p = Propagation delay\nT_{ACK} = ACK transmission time",
+        "front": "What is the entropy change (\u0394S) when identical gases are mixed adiabatically?",
+        "back": "The entropy change is zero ($$\\Delta S_{mixing} = 0$$) due to the symmetry of mixing identical gases under the same initial conditions.",
         "type": "formula-based",
-        "topic": "Data Link Layer",
+        "course": "Thermodynamics",
+        "topic": "Pure Substances",
+        "id": 20
+    },
+    {
+        "front": "What is the Ideal Gas Law equation?",
+        "back": "The Ideal Gas Law is represented by $$PV = nRT$$, where P is pressure, V is volume, n is number of moles, R is the universal gas constant, and T is absolute temperature.",
+        "type": "formula-based",
+        "course": "Thermodynamics",
+        "topic": "First Law Heat Work and Energy",
+        "id": 21
+    },
+    {
+        "front": "What are the key assumptions in the pump work calculation?",
+        "back": "The pump work calculation assumes: (1) incompressible fluid, (2) constant density, (3) neglects kinetic and potential energy effects.",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "First Law Heat Work and Energy",
+        "id": 22
+    },
+    {
+        "front": "How does the nozzle angle affect blade efficiency in an impulse turbine?",
+        "back": "Smaller nozzle angles lead to higher blade efficiency. As the nozzle angle decreases, the $$\\\\cos^{2}(\\\\alpha)$$ increases, resulting in more effective energy conversion.",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "Thermodynamic System and Processes",
+        "id": 23
+    },
+    {
+        "front": "What is the relationship between indicated power and brake power in an internal combustion engine?",
+        "back": "$$\\\\text{Brake Power} = \\\\text{Mechanical Efficiency} \\\\times \\\\text{Indicated Power}$$, representing the actual usable power output after accounting for mechanical losses.",
+        "type": "formula-based",
+        "course": "Thermodynamics",
+        "topic": "Pure Substances",
+        "id": 24
+    },
+    {
+        "front": "How is the quality ($$x$$) of a fluid calculated during a throttling process?",
+        "back": "Quality is calculated using the enthalpy balance equation: $$h_2 = h_f + x_2(h_g - h_f)$$, where $$h_f$$ is saturated liquid enthalpy and $$h_g$$ is saturated vapor enthalpy.",
+        "type": "formula-based",
+        "course": "Thermodynamics",
+        "topic": "Power System",
+        "id": 25
+    },
+    {
+        "front": "In the First Law of Thermodynamics, what does negative work indicate?",
+        "back": "Negative work indicates energy input to the system, meaning external work is being done on the system to increase its internal energy.",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "Power System",
+        "id": 26
+    },
+    {
+        "front": "What key conditions are assumed in the Steady Flow Energy Equation?",
+        "back": "The equation assumes steady-state conditions, neglects potential energy changes, and accounts for energy transfers through enthalpy, kinetic energy, heat, and work.",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "Power System",
+        "id": 27
+    },
+    {
+        "front": "What is the formula for Otto cycle thermal efficiency?",
+        "back": "$$\\\\eta_{Otto} = 1 - \\\\frac{1}{r^{\\\\gamma-1}}$$, where $$r$$ is compression ratio and $$\\\\gamma$$ is specific heat ratio.",
+        "type": "formula-based",
+        "course": "Thermodynamics",
+        "topic": "Power System",
+        "id": 28
+    },
+    {
+        "front": "What is the relationship between specific heats $$C_{p}$$ and $$C_{v}$$ for an ideal gas?",
+        "back": "For an ideal gas, the gas constant $$R = C_{p} - C_{v}$$, which in this case is 0.2 kJ/(kg\u00b7K). $$C_{p}$$ is 1000 J/(kg\u00b7K) and $$C_{v}$$ is 800 J/(kg\u00b7K).",
+        "type": "formula-based",
+        "course": "Thermodynamics",
+        "topic": "IC Engine",
+        "id": 29
+    },
+    {
+        "front": "What is the compression ratio (r) in an Otto cycle?",
+        "back": "$$r = \\frac{V_{1}}{V_{c}}$$, representing the ratio of the initial volume to the clearance volume.",
+        "type": "formula-based",
+        "course": "Thermodynamics",
+        "topic": "IC Engine",
+        "id": 30
+    },
+    {
+        "front": "What fundamental difference exists between ideal and real gases regarding the Joule-Thomson coefficient?",
+        "back": "In real gases, the Joule-Thomson coefficient can be positive or negative, while for ideal gases it is always zero, meaning no temperature change during throttling.",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "Pure Substances",
+        "id": 31
+    },
+    {
+        "front": "What key parameters are considered in the steady flow energy equation for a turbine?",
+        "back": "The equation considers: inlet and outlet enthalpies, inlet and outlet velocities, elevation changes, and mass flow rate.",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "First Law Heat Work and Energy",
         "id": 32
     },
     {
-        "front": "What determines the number of check bits in CRC, and how are they calculated?",
-        "back": "The degree (n) of the generator polynomial G(x) determines the number of check bits. If the degree is n, then n check bits are added. These bits are calculated as the remainder of the polynomial division.",
+        "front": "What defines an isothermal process?",
+        "back": "An isothermal process is a thermodynamic transformation where the temperature remains constant (T\u2081 = T\u2082) throughout the entire process.",
         "type": "definition/recall-based",
-        "topic": "Network Layer Protocol",
-        "id": 597
+        "course": "Thermodynamics",
+        "topic": "First Law Heat Work and Energy",
+        "id": 33
     },
     {
-        "front": "What is the formula for window size increase during TCP's Congestion Avoidance Phase?",
-        "back": "$$cwnd_{new} = cwnd_{current} + 1$$\nWindow size increases linearly (additive increase)",
+        "front": "How is maximum useful work calculated in a Carnot cycle?",
+        "back": "Maximum useful work is calculated by multiplying the Carnot efficiency by the total heat input: $$W_{max} = \\eta \\times Q_1$$.",
         "type": "formula-based",
-        "topic": "Network Security",
-        "id": 977
+        "course": "Thermodynamics",
+        "topic": "Thermodynamic System and Processes",
+        "id": 34
     },
     {
-        "front": "How can the subnet mask 255.255.255.192 be represented in CIDR notation?",
-        "back": "/26 (because it has 26 consecutive 1s in binary representation)",
-        "type": "definition/recall-based",
-        "topic": "Network Layer Protocol",
-        "id": 784
+        "front": "How is internal energy change ($$\\\\Delta U$$) calculated in this thermodynamic scenario?",
+        "back": "Internal energy change is calculated by $$m C_{v} \\\\Delta T$$, where $$m$$ is mass, $$C_{v}$$ is specific heat capacity at constant volume, and $$\\\\Delta T$$ is temperature change.",
+        "type": "formula-based",
+        "course": "Thermodynamics",
+        "topic": "Pure Substances",
+        "id": 35
     },
     {
-        "front": "What is the role of private and public keys in digital signatures?",
-        "back": "Private key: Used for signing messages (by the sender)\nPublic key: Used for signature verification (by anyone)",
-        "type": "definition/recall-based",
-        "topic": "Network Layer Protocol",
-        "id": 818
+        "front": "What is the formula for specific work in a reversible steady flow compression process?",
+        "back": "$$w = \\int_{1}^{2} v dP$$, where v is specific volume and P is pressure, integrated from initial to final state.",
+        "type": "formula-based",
+        "course": "Thermodynamics",
+        "topic": "Second Law Carnot Cycle and Entropy",
+        "id": 36
     },
     {
-        "front": "What are the common applications of UTP cables?",
-        "back": "Common applications of UTP cables include:\n- Local Area Networks (LANs)\n- Telephone connections\n- Ethernet networks",
+        "front": "How is stroke length related to the crank radius in swept volume calculation?",
+        "back": "Stroke length is twice the crank radius, which determines the total distance the piston travels in one complete cycle.",
         "type": "definition/recall-based",
-        "topic": "Network Security",
-        "id": 1025
+        "course": "Thermodynamics",
+        "topic": "Second Law Carnot Cycle and Entropy",
+        "id": 37
     },
     {
-        "front": "What are the three prerequisites for route aggregation?",
-        "back": "1. Networks must be contiguous (numerically adjacent)\n2. Networks must share the same next-hop router\n3. Combined networks must align with bit boundaries",
+        "front": "What is the formula for calculating net power output in a multi-stage adiabatic turbine?",
+        "back": "The net power output is calculated as: $$W_{T} = \\dot{m}_{1}(h_{1} - h_{2}) + \\dot{m}_{3}(h_{2} - h_{3})$$",
+        "type": "formula-based",
+        "course": "Thermodynamics",
+        "topic": "Power System",
+        "id": 38
+    },
+    {
+        "front": "In a heat engine with 75% efficiency and 50 kJ net work output, what is the total heat input?",
+        "back": "$$Q_{in} = \\frac{W_{net}}{\\eta} = \\frac{50}{0.75} = 66.67 \\text{ kJ}$$",
+        "type": "formula-based",
+        "course": "Thermodynamics",
+        "topic": "Second Law Carnot Cycle and Entropy",
+        "id": 39
+    },
+    {
+        "front": "What is the ideal gas law equation and what do its variables represent?",
+        "back": "The ideal gas law is $$PV = nRT$$, where:\\n- P = Pressure\\n- V = Volume\\n- n = Total moles of gas\\n- R = Universal gas constant\\n- T = Temperature",
+        "type": "formula-based",
+        "course": "Thermodynamics",
+        "topic": "IC Engine",
+        "id": 40
+    },
+    {
+        "front": "What is the primary purpose of a reheat cycle in thermal power plants?",
+        "back": "To improve overall plant efficiency by expanding steam in multiple turbine stages with intermediate reheating, which reduces moisture content and minimizes thermal stress on turbine components.",
         "type": "definition/recall-based",
-        "topic": "Network Layer Protocol",
-        "id": 517
+        "course": "Thermodynamics",
+        "topic": "Power System",
+        "id": 41
+    },
+    {
+        "front": "What does $$c_{p}$$ represent in the entropy change formula?",
+        "back": "$$c_{p}$$ represents the specific heat at constant pressure, which characterizes the thermal properties of the system.",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "Second Law Carnot Cycle and Entropy",
+        "id": 42
+    },
+    {
+        "front": "How is net work ($$w_{net}$$) calculated in the Rankine cycle?",
+        "back": "Net work is calculated as the difference between turbine work ($$w_T$$) and pump work ($$w_P$$): $$w_{net} = w_T - w_P$$",
+        "type": "formula-based",
+        "course": "Thermodynamics",
+        "topic": "Power System",
+        "id": 43
+    },
+    {
+        "front": "Why is the natural logarithm used in the isothermal compression work formula?",
+        "back": "The natural logarithm captures the relationship between volume changes and work done during a constant temperature process.",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "Second Law Carnot Cycle and Entropy",
+        "id": 44
+    },
+    {
+        "front": "What is the practical significance of the Lenoir cycle?",
+        "back": "The Lenoir cycle provides a method to calculate thermal efficiency of heat engines, helps understand energy conversion, and demonstrates how pressure, volume, and temperature interrelate in ideal gas systems.",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "Pure Substances",
+        "id": 45
+    },
+    {
+        "front": "Give two examples of path functions in thermodynamics",
+        "back": "Heat (Q) and Work (W) are examples of path functions in thermodynamics.",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "First Law Heat Work and Energy",
+        "id": 46
+    },
+    {
+        "front": "What is the mathematical expression for internal energy of a monatomic ideal gas?",
+        "back": "$$U = \\frac{3}{2}nRT$$, where n is the number of moles, R is the universal gas constant, and T is absolute temperature.",
+        "type": "formula-based",
+        "course": "Thermodynamics",
+        "topic": "Second Law Carnot Cycle and Entropy",
+        "id": 47
+    },
+    {
+        "front": "What does positive work indicate in a thermodynamic expansion process?",
+        "back": "Positive work indicates energy transfer from the system to the surroundings during expansion.",
+        "type": "definition/recall-based",
+        "course": "Thermodynamics",
+        "topic": "First Law Heat Work and Energy",
+        "id": 48
+    },
+    {
+        "front": "What is the relationship between enthalpy drop and kinetic energy conversion?",
+        "back": "The enthalpy drop can be directly converted into kinetic energy using the equation $$\\Delta h = \\frac{V_2^2}{2000}$$, demonstrating energy transformation in thermodynamic systems.",
+        "type": "formula-based",
+        "course": "Thermodynamics",
+        "topic": "IC Engine",
+        "id": 49
+    },
+    {
+        "front": "How is heat input calculated in a reheat Rankine cycle?",
+        "back": "Heat input is calculated as $$q_{s} = (h_{1} - h_{6}) + (h_{3} - h_{2})$$, representing total heat supplied to the system.",
+        "type": "formula-based",
+        "course": "Thermodynamics",
+        "topic": "Power System",
+        "id": 50
     }
 ]
