@@ -22,10 +22,15 @@ flashcards = load_flashcards('flashcards.json')
 def display_flashcard(flashcard):
     """
     Display the current flashcard.
-    Renders the question and answer with markdown support.
+    Renders the question, answer, and additional metadata with markdown support.
     """
-    st.subheader(flashcard['front'])
-    st.markdown(flashcard['back'], unsafe_allow_html=True)
+    st.subheader(f"Question: {flashcard['front']}")
+    st.markdown(f"**Answer:** {flashcard['back']}", unsafe_allow_html=True)
+    
+    # Display additional metadata
+    st.markdown(f"**Topic:** {flashcard['topic']}")
+    st.markdown(f"**Course:** {flashcard['course']}")
+    st.markdown(f"**Type:** {flashcard['type']}")
 
 # Get the current flashcard index from session state
 flashcard_index = st.session_state.get('flashcard_index', 0)
